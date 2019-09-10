@@ -66,7 +66,7 @@ lazy val client = (project in file("client"))
     "com.amazonaws" %  "aws-java-sdk-kinesis"  % "1.11.627",
     "com.amazonaws" %  "amazon-kinesis-client" % "1.11.2",
     "com.amazonaws" % "dynamodb-streams-kinesis-adapter" % "1.5.0",
-    "org.specs2"    %% "specs2-scalacheck"     % "4.0.5" % Test
+    "org.specs2"    %% "specs2-scalacheck"     % "4.7.0" % Test
   )
 )
 
