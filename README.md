@@ -1,4 +1,4 @@
-# gfc-aws-kinesis [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.gilt/gfc-aws-kinesis_2.12/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/com.gilt/gfc-aws-kinesis_2.12) [![Join the chat at https://gitter.im/gilt/gfc](https://badges.gitter.im/gilt/gfc.svg)](https://gitter.im/gilt/gfc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# gfc-aws-kinesis [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.gfccollective/gfc-aws-kinesis_2.12/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/org.gfccollective/gfc-aws-kinesis_2.12) [![Join the chat at https://gitter.im/gilt/gfc](https://badges.gitter.im/gilt/gfc.svg)](https://gitter.im/gilt/gfc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Scala wrapper around AWS Kinesis Client Library. Part of the [Gilt Foundation Classes](https://github.com/gilt?q=gfc).
 
@@ -9,13 +9,13 @@ The latest version is 0.17.0, which is cross-built against Scala 2.11.x and 2.12
 SBT dependency:
 
 ```scala
-libraryDependencies += "com.gilt" %% "gfc-aws-kinesis" % "0.17.0"
+libraryDependencies += "org.gfccollective" %% "gfc-aws-kinesis" % "0.17.0"
 ```
 
 SBT Akka stream (2.5.x) dependency:
 
 ```scala
-libraryDependencies += "com.gilt" %% "gfc-aws-kinesis-akka" % "0.17.0"
+libraryDependencies += "org.gfccollective" %% "gfc-aws-kinesis-akka" % "0.17.0"
 ```
 
 # Basic usage

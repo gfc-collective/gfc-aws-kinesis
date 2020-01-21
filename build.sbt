@@ -1,7 +1,7 @@
 val commonSettings = Seq(
   scalaVersion := "2.12.10",
   crossScalaVersions := Seq(scalaVersion.value),
-  organization := "com.gilt",
+  organization := "org.gfccollective",
 
   releaseCrossBuild := true,
 
@@ -60,9 +60,9 @@ lazy val client = (project in file("client"))
   .settings(
   name := "gfc-aws-kinesis",
   libraryDependencies ++= Seq(
-    "com.gilt"      %% "gfc-util"              % "0.2.2",
-    "com.gilt"      %% "gfc-logging"           % "0.0.8",
-    "com.gilt"      %% "gfc-concurrent"        % "0.3.8",
+    "org.gfccollective"      %% "gfc-util"              % "1.0.0",
+    "org.gfccollective"      %% "gfc-logging"           % "1.0.0",
+    "org.gfccollective"      %% "gfc-concurrent"        % "1.0.0",
     "com.amazonaws" %  "aws-java-sdk-kinesis"  % "1.11.642",
     "com.amazonaws" %  "amazon-kinesis-client" % "1.13.2",
     "com.amazonaws" % "dynamodb-streams-kinesis-adapter" % "1.5.0",
