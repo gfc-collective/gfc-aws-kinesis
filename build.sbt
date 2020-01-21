@@ -1,6 +1,6 @@
 val commonSettings = Seq(
-  scalaVersion := "2.12.10",
-  crossScalaVersions := Seq(scalaVersion.value),
+  scalaVersion := "2.13.1",
+  crossScalaVersions := Seq(scalaVersion.value, "2.12.10"),
   organization := "org.gfccollective",
 
   releaseCrossBuild := true,
@@ -66,7 +66,7 @@ lazy val client = (project in file("client"))
     "com.amazonaws" %  "aws-java-sdk-kinesis"  % "1.11.642",
     "com.amazonaws" %  "amazon-kinesis-client" % "1.13.2",
     "com.amazonaws" % "dynamodb-streams-kinesis-adapter" % "1.5.0",
-    "org.specs2"    %% "specs2-scalacheck"     % "4.8.3" % Test
+    "org.specs2"    %% "specs2-scalacheck"     % "4.8.3" % Test,
   )
 )
 

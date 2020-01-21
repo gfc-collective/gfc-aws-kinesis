@@ -187,7 +187,7 @@ case class KCLWorkerRunner (
             Future.successful(r -> Failure(e))
 
           case Success(a) =>
-            val res : Future[(Record, Try[Unit])] = processRecord(a) map (_ => r -> Success(Unit))
+            val res : Future[(Record, Try[Unit])] = processRecord(a) map (_ => r -> Success(()))
 
             res recover {
               case NonFatal(e) => r -> Failure(e)

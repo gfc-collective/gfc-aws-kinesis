@@ -246,7 +246,7 @@ class KinesisPublisherImpl (
 
       KinesisPublisherPutRecordsCallResults(
         allResults = for (
-          (res,req) <- callRes.getRecords.asScala.zip(recordEntries)
+          (res,req) <- callRes.getRecords.asScala.toSeq.zip(recordEntries)
         ) yield {
           (req, Some(res))
         }

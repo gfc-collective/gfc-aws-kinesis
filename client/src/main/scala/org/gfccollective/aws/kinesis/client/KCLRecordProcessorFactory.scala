@@ -111,7 +111,7 @@ object KCLRecordProcessorFactory {
                         , checkpointer: IRecordProcessorCheckpointer
                         ): Unit = {
 
-        val records: Seq[Record] = recordsJList.asScala
+        val records: Seq[Record] = recordsJList.asScala.toSeq
         debug(s"Processing ${records.size} records from shard ${myShardId}")
 
         try {
@@ -125,7 +125,7 @@ object KCLRecordProcessorFactory {
         }
 
         // Checkpoint periodically
-        if ( checkpointInterval.isFinite() &&  System.currentTimeMillis - lastCheckpointTimestamp > checkpointInterval.toMillis ) {
+        if ( checkpointInterval.isFinite &&  System.currentTimeMillis - lastCheckpointTimestamp > checkpointInterval.toMillis ) {
           doRetry{ doCheckpoint(checkpointer) }
         }
       }
