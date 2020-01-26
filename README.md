@@ -1,12 +1,12 @@
 # gfc-aws-kinesis [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.gfccollective/gfc-aws-kinesis_2.12/badge.svg?style=plastic)](https://maven-badges.herokuapp.com/maven-central/org.gfccollective/gfc-aws-kinesis_2.12) [![Build Status](https://github.com/gfc-collective/gfc-aws-kinesis/workflows/Scala%20CI/badge.svg)](https://github.com/gfc-collective/gfc-aws-kinesis/actions) [![Coverage Status](https://coveralls.io/repos/gfc-collective/gfc-aws-kinesis/badge.svg?branch=master&service=github)](https://coveralls.io/github/gfc-collective/gfc-aws-kinesis?branch=master)
 
 Scala wrapper around AWS Kinesis Client Library.
-A fork and new home of the former Gilt Foundation Classes (`com.gilt.gfc`), now called the [GFC Collective](https://github.com/gfc-collective), maintained by some of the original authors.
+A fork and new home of the now unmaintained Gilt Foundation Classes (`com.gilt.gfc`), now called the [GFC Collective](https://github.com/gfc-collective), maintained by some of the original authors.
 
 
 ## Getting gfc-aws-kinesis
 
-The latest version is 1.0.0, which is cross-built against Scala 2.12.x and 2.13.x.
+The latest version is 1.0.0, released on 21/Jan/2020 and cross-built against Scala 2.12.x and 2.13.x.
 
 If you're using SBT, add the following line to your build file:
 
