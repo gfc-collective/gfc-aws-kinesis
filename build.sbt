@@ -25,7 +25,7 @@ val commonSettings = Seq(
 
   pomIncludeRepository := { _ => false },
 
-  licenses := Seq("Apache-style" -> url("https://raw.githubusercontent.com/gfc-collective/gfc-aws-kinesis/master/LICENSE")),
+  licenses := Seq("Apache-style" -> url("https://raw.githubusercontent.com/gfc-collective/gfc-aws-kinesis/main/LICENSE")),
 
   homepage := Some(url("https://github.com/gfc-collective/gfc-aws-kinesis")),
 
