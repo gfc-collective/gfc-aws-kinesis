@@ -3,13 +3,9 @@ val commonSettings = Seq(
   crossScalaVersions := Seq(scalaVersion.value, "2.12.15"),
   organization := "org.gfccollective",
 
-  releaseCrossBuild := true,
-
   scalacOptions += "-target:jvm-1.8",
 
   javacOptions ++= Seq("-source", "1.8", "-target", "1.8"),
-
-  releasePublishArtifactsAction := PgpKeys.publishSigned.value,
 
   publishMavenStyle := true,
 
