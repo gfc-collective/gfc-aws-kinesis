@@ -1,5 +1,5 @@
 val commonSettings = Seq(
-  scalaVersion := "2.13.7",
+  scalaVersion := "2.13.8",
   crossScalaVersions := Seq(scalaVersion.value, "2.12.15"),
   organization := "org.gfccollective",
 
